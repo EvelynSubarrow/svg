@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2000 1200" xml:space="preserve">
+<defs>
+    <style>
+        text{
+            font-family: British Rail Dark Normal;
+            white-space: normal;
+        }
+        .main {
+            font-size:180px;
+        }
+        .sub {
+            font-size:80px;
+        }
+        .red {
+            fill:#BE1E2D;
+        }
+        .blue {
+            fill:#334581;
+        }
+        .white {
+            fill:#ffffff;
+        }
+        .black {
+            fill:#000008;
+        }
+        .grey {
+            fill:#b0b0b8;
+        }
+        .grey2 {
+            fill:#808088;
+        }
+        .background {
+            fill-opacity:0.990;
+        }
+    </style>
+<pattern id="bg" patternUnits="userSpaceOnUse" width="40" height="40">
+  <rect x="0" y="0" height="40" width="40" fill="#b0b0b8" />
+  <path d="M-10,10 l20,-20
+           M0,40 l40,-40
+           M30,50 l20,-20" 
+        style="stroke:#c0c0c0; stroke-width:7" />
+</pattern>
+    </defs>
+    <rect x="0" y="0" width="100%" height="100%" class="grey" />
+    <rect x="10" y="10" width="1980" height="1180" fill="url(#bg)" />
+    <text x="130" y="180" class="main blue">One like for one opinion</text>
+    <text class="sub black">
+        <tspan x="150" y="290">Abortion</tspan><tspan class="blue" x="50">1.</tspan>
+        <tspan x="150" dy="95">LGBT community</tspan><tspan class="blue" x="50">2.</tspan>
+        <tspan x="150" dy="95">Non-binary identity</tspan><tspan class="blue" x="50">3.</tspan>
+        <tspan x="150" dy="95">Breastfeeding in public</tspan><tspan class="blue" x="50">4.</tspan>
+        <tspan x="150" dy="95">Feminism</tspan><tspan class="blue" x="50">5.</tspan>
+        <tspan x="150" dy="95">Meninism</tspan><tspan class="blue" x="50">6.</tspan>
+        <tspan x="150" dy="95">Long distance relationships</tspan><tspan class="blue" x="50">7.</tspan>
+        <tspan x="150" dy="95">Gun laws</tspan><tspan class="blue" x="50">8.</tspan>
+        <tspan x="150" dy="95">Saying the n-word</tspan><tspan class="blue" x="50">9.</tspan>
+        <tspan x="150" dy="95">Pedophilia</tspan><tspan class="blue" x="50">10.</tspan>
+
+        <tspan x="1240" y="290">Donald Trump</tspan><tspan class="blue" x="1120">11.</tspan>
+        <tspan x="1240" dy="95">Barack Obama</tspan><tspan class="blue" x="1120">12.</tspan>
+        <tspan x="1240" dy="95">Rape in marriage</tspan><tspan class="blue" x="1120">13.</tspan>
+        <tspan x="1240" dy="95">Anime</tspan><tspan class="blue" x="1120">14.</tspan>
+        <tspan x="1240" dy="95">Hentai/porn</tspan><tspan class="blue" x="1120">15.</tspan>
+        <tspan x="1240" dy="95">Pansexuality</tspan><tspan class="blue" x="1120">16.</tspan>
+        <tspan x="1240" dy="95">Aliens</tspan><tspan class="blue" x="1120">17.</tspan>
+        <tspan x="1240" dy="95">Cultural appropriation</tspan><tspan class="blue" x="1120">18.</tspan>
+        <tspan x="1240" dy="95">Fake freckles</tspan><tspan class="blue" x="1120">19.</tspan>
+        <tspan x="1240" dy="95">He/him lesbians</tspan><tspan class="blue" x="1120">20.</tspan>
+    </text>
+</svg>
