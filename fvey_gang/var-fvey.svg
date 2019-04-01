@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1100 1100">
+    <defs>
+        <style>
+            text{
+                font-family: British Rail Dark Normal;
+                white-space: normal;
+                fill:#202020;
+                letter-spacing:1.5;
+                font-size:110px;
+            }
+    
+            .outer {
+                fill:#304010;
+                stroke:#202020;
+                stroke-width:10;
+            }
+            .inner {
+                fill:#304010;
+                stroke:#202020;
+                stroke-width:7;
+            }
+            .pentagram {
+                fill:none;
+                stroke:#202020;
+                stroke-width:10;
+            }
+            .pentagram_outline {
+                fill:none;
+                stroke:#304010;
+                stroke-width:15;
+            }
+            .pentagon_outline {
+                fill:none;
+                stroke:#707070;
+                stroke-width:30;
+            }
+
+            .nat_i_s {
+                stroke:#202020;
+            }
+            .nat_i_of {
+                fill:#202020;
+                stroke:#707070;
+            }
+            .nat_i_f {
+                fill:#202020;
+                stroke:#202020;
+            }
+            .nat_i_f_ns {
+                fill:#202020;
+                stroke:none;
+            }
+            .nat_o_f {
+                fill:#707070;
+                stroke:none;
+            }
+            .nat_outer {
+                fill:none;
+                stroke:#707070;
+            }
+        </style>
+        <path id="mainpath" d="M-400,0 a 400,400 0,0,1 800,0" />
+
+        <g id="key" transform="scale(1,1)">
+<!--            <rect x="-14" y="-260" width="28" height="520" fill="magenta" fill-opacity="0.4" /> -->
+            <path d="M -14 -260 q 14,-5 28,0 v 15 h 30 v -15 h 45 v 15 h -15 v 60 h 15 v 15 h -45 v -15 h -30 v 60 v 270 a 46,46 0,1,1 0,100 v 15 q -14,7 -28,0 v -15 a 46,46 0,1,1 0,-100 v -330 h -30 v 15 h -45 v -15 h 15 v -60 h -15 v -15 h 45 v 15 h 30 Z M -30,195 a 30,30 0,0,1 60,0 a 30,30 0,0,1 -60,0" class="nat_i_f_ns" fill-rule="evenodd" />
+        </g>
+
+        <!-- United Kingdom -->
+        <clipPath id="gb_outer_clip">
+            <circle r="80" />
+        </clipPath>
+
+        <g id="gb_main" clip-path="url(#gb_outer_clip)" transform="translate(-30,-15)">
+            <clipPath id="gb_t">
+                <path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/>
+            </clipPath>
+            <path d="M0,0 v30 h60 v-30 z" class="nat_i_f_ns" />
+            <path d="M0,0 L60,30 M60,0 L0,30" stroke="#304010" stroke-width="6"/>
+            <path d="M0,0 L60,30 M60,0 L0,30" clip-path="url(#gb_t)" class="nat_i_s" stroke-width="4"/>
+            <path d="M30,0 v30 M0,15 h60" stroke="#304010" stroke-width="10"/>
+            <path d="M30,0 v30 M0,15 h60" class="nat_i_s" stroke-width="6"/>
+        </g>
+
+        <g id="gb_outer" clip-path="url(#gb_outer_clip)">
+            <use xlink:href="#gb_main" transform="scale(5,5)" />
+        </g>
+
+        <!-- United States -->
+        <g id="us_star" transform="scale(0.45,0.45)">
+            <g id="us_sc">
+                <path id="us_t" d="M 0,-40 V 0 H 20 z" transform="rotate(18 0,-40)"/>
+                <use xlink:href="#us_t" transform="scale(-1,1)"/>
+            </g>
+            <use xlink:href="#us_sc" transform="rotate(72)"/>
+            <use xlink:href="#us_sc" transform="rotate(144)"/>
+            <use xlink:href="#us_sc" transform="rotate(216)"/>
+            <use xlink:href="#us_sc" transform="rotate(288)"/>
+        </g>
+
+        <clipPath id="us_outer_clip">
+            <circle r="80" />
+        </clipPath>
+
+        <g id="us_outer" clip-path="url(#us_outer_clip)" class="nat_i_f_ns">
+            <use y="-25" xlink:href="#us_star" transform="" />
+            <use y="-25" x="-50" xlink:href="#us_star" transform="" />
+            <use y="-25" x="50" xlink:href="#us_star" transform="" />
+            <rect x="-200" width="400" y="0" height="20" />
+            <rect x="-200" width="400" y="40" height="20" />
+        </g>
+
+        <g id="us_outer_2" class="nat_i_f_ns">
+            <use xlink:href="#us_star" transform="scale(4.5,4.5)" />
+        </g>
+
+        <!-- Canada -->
+        <path id="ca_leaf" d="m 0,-270 -34.11312,63.62529 c -3.87086,6.91501 -10.80627,6.27363 -17.74169,2.41138 l -24.69699,-12.78858 18.40705,97.72711 c 3.87086,17.85419 -8.54859,17.85419 -14.67765,10.13435 l -43.10105,-48.25099 -6.99738,24.503 c -0.80692,3.21777 -4.35481,6.59744 -9.67748,5.79261 l -54.50177,-11.45912 14.31524,52.04475 c 3.06451,11.58054 5.4549,16.37528 -3.09375,19.42959 l -19.42619,9.13025 93.82127,76.20838 c 3.7135,2.88151 5.58971,8.067 4.26768,12.7621 l -8.21136,26.94707 c 32.30405,-3.72371 61.24898,-9.32594 93.56939,-12.77619 2.85323,-0.30459 7.62988,4.40408 7.61029,7.71058 l -4.28024,98.72342 15.70639,0 -2.47237,-98.5117 c -0.0197,-3.3065 4.31372,-8.22689 7.16695,-7.9223 32.32041,3.45026 61.26538,9.05248 93.56942,12.77619 l -8.21134,-26.94707 c -1.32203,-4.6951 0.55417,-9.88059 4.26767,-12.7621 l 93.82125,-76.20838 -19.42617,-9.13025 c -8.54867,-3.05431 -6.15828,-7.84905 -3.09377,-19.42959 l 14.31527,-52.04475 -54.5018,11.45912 c -5.32267,0.80483 -8.87056,-2.57484 -9.6775,-5.79261 l -6.99737,-24.503 -43.10103,48.25099 c -6.12908,7.71984 -18.54854,7.71984 -14.67768,-10.13435 l 18.40702,-97.72711 -24.69694,12.78858 c -6.93559,3.86225 -13.87083,4.50363 -17.7417,-2.41138 Z"/>
+
+        <g id="ca_inner">
+            <use y="50" xlink:href="#ca_leaf" class="nat_i_of" transform="scale(0.45,0.45)" stroke-width="5" />
+        </g>
+
+        <g id="ca_outer">
+            <use y="50" xlink:href="#ca_leaf" class="nat_i_f_ns" transform="scale(0.345,0.345)" />
+        </g>
+
+        <!-- Australia -->
+        <clipPath id="au_b">
+            <path d="M0 0v1.5h7V3H6zm6 0H3v3.5H0V3z"/>
+        </clipPath>
+        <path id="au_a" d="M0-360l69.421 215.845 212.038-80.301L155.99-35.603l194.985 115.71-225.881 19.651 31.105 224.59L0 160l-156.198 164.349 31.105-224.59-225.881-19.651 194.986-115.711-125.471-188.853 212.038 80.301z"/>
+        <path id="au_d" d="M0-210L54.86-75.508l144.862 10.614L88.765 28.842l34.67 141.052L0 93.334l-123.435 76.56 34.67-141.052-110.957-93.736L-54.86-75.508z"/>
+        <use id="au_c" xlink:href="#a" transform="scale(2.1)"/>
+
+        <g id="au_base">
+            <use xlink:href="#au_a" x="-1210" y="-315" />
+            <use xlink:href="#au_a" x="50" y="1680" />
+            <use xlink:href="#au_a" x="50" y="-1680"/>
+            <use xlink:href="#au_a" x="1170" y="-651"/>
+            <use xlink:href="#au_d" x="574" y="210"/>
+        </g>
+
+        <g id="au_outer">
+            <use xlink:href="#au_base" transform="scale(0.035,0.035)" class="nat_i_f" stroke-width="100" />
+        </g>
+        <g id="au_inner">
+            <use y="150" xlink:href="#au_base" transform="scale(0.05,0.05)" class="nat_outer" stroke-width="190" />
+            <use y="150" xlink:href="#au_base" transform="scale(0.05,0.05)" class="nat_i_f" stroke-width="120" />
+        </g>
+
+        <!-- NZ -->
+
+        <g id="nz_star">
+            <g id="Arm" transform="translate(0,-0.324925)">
+                <path d="M 0,0 L 0,0.5 L 1,0 z"/>
+                <path d="M 0,0 L 0,-0.5 L 1,0 z" transform="rotate(-36,1,0)"/>
+            </g>
+            <use xlink:href="#Arm" transform="scale(-1,1)"/>
+            <use xlink:href="#Arm" transform="rotate(72,0,0)"/>
+            <use xlink:href="#Arm" transform="rotate(-72,0,0)"/>
+            <use xlink:href="#Arm" transform="rotate(-72,0,0) scale(-1,1)"/>
+        </g>
+
+        <g id="nz_starset_o" transform="translate(-185, -220)" >
+            <g id="Gamma_Crucis">
+                <use xlink:href="#nz_star" transform="translate(185,50) scale(45.4)"/>
+            </g>
+            <g transform="rotate(82,185,170)"> <!-- ,,240 -->
+                <g id="Delta_Crucis">
+                    <use xlink:href="#nz_star" transform="translate(185,50) rotate(-82) scale(40.4)"/>
+                </g>
+                <g id="Beta_Crucis">
+                    <use xlink:href="#nz_star" transform="translate(185,310) rotate(-82) scale(45.4)"/>
+                </g>
+            </g>
+            <g id="Alpha_Crucis">
+                <use xlink:href="#nz_star" transform="translate(185,410) scale(50.4)"/>
+            </g>
+        </g>
+        <g id="nz_starset_i" transform="translate(-185, -220)" >
+            <g id="Gamma_Crucis">
+                <use xlink:href="#nz_star" transform="translate(185,50) scale(30)"/> <!-- , 120 -->
+            </g>
+            <g transform="rotate(82,185,170)"> <!-- ,,240 -->
+                <g id="Delta_Crucis">
+                    <use xlink:href="#nz_star" transform="translate(185,50) rotate(-82) scale(25)"/>
+                </g>
+                <g id="Beta_Crucis">
+                    <use xlink:href="#nz_star" transform="translate(185,310) rotate(-82) scale(30)"/>
+                </g>
+            </g>
+            <g id="Alpha_Crucis">
+                <use xlink:href="#nz_star" transform="translate(185,410) scale(35)"/>
+            </g>
+        </g>
+
+        <g id="nz_inner">
+            <use xlink:href="#nz_starset_o" class="nat_o_f" transform="scale(0.5,0.5)" />
+            <use xlink:href="#nz_starset_i" class="nat_i_f_ns" transform="scale(0.5,0.5)" />
+        </g>
+
+        <g id="nz_outer">
+            <use xlink:href="#nz_starset_o" class="nat_i_f" stroke-width="0.055" transform="scale(0.32,0.32)" />
+        </g>
+
+        <g id="lightning" transform="scale(0.22, 0.22)">
+            <path d="M -1250,125 l 500,-250 l -100,100 l 600,-100 l -100,100 l 600,-100 l -100,100 l 600,-100 l -100,100 l 600,-100 l -500,250 l 100,-100, -600, 100 l 100,-100, -600, 100 l 100,-100, -600, 100 l 100,-100 Z" />
+        </g>
+        <g id="lightning_a">
+            <use xlink:href="#lightning" transform="rotate(95)"/>
+        </g>
+        <g id="lightning_b">
+            <use xlink:href="#lightning" transform="scale(1,-1) rotate(95)"/>
+        </g>
+
+        <g id="central">
+<!--            <use xlink:href="#lightning" x="0" y="0" class="nat_i_f_ns" /> -->
+            <use xlink:href="#lightning_a" x="0" y="0" class="nat_i_f_ns" transform="rotate(42)" />
+            <use xlink:href="#lightning_a" x="0" y="0" class="nat_i_f_ns" transform="rotate(-42)" />
+
+            <use xlink:href="#key" x="0" y="0" class="nat_i_f_ns" />
+        </g>
+
+        <g id="device">
+            <circle cx="0" cy="0" r="495" stroke-width="10" class="outer" /> <!-- extent: 500 -->
+
+            <clipPath id="circlebound">
+                <rect x="-500" width="1000" y="170" height="500" />
+            </clipPath>
+
+            <circle cx="0" cy="0" r="350" class="pentagon_outline" clip-path="url(#circlebound)" />
+            <circle cx="0" cy="0" r="350" class="pentagram" clip-path="url(#circlebound)" />
+
+            <circle cx="-332.87" cy="108.16" r="90" class="inner" />
+            <circle cx="-205.72" cy="283.16" r="90" class="inner" />
+            <circle cx="0.00" cy="350.00" r="90" class="inner" />
+            <circle cx="205.72" cy="283.16" r="90" class="inner" />
+            <circle cx="332.87" cy="108.16" r="90" class="inner" />
+
+            <use xlink:href="#au_outer" x="-332.87" y="108.16" />
+            <use xlink:href="#ca_outer" x="-205.72" y="283.16" />
+            <use xlink:href="#nz_outer" x="0" y="350" />
+            <use xlink:href="#gb_outer" x="205.72" y="283.16" />
+            <use xlink:href="#us_outer_2" x="332.87" y="108.16" />
+
+            <text>
+                <textPath startOffset="82" xlink:href="#mainpath">AUS · CAN · NZ · UK · US</textPath>
+            </text>
+
+            <use xlink:href="#central" x="0" y="-40" />
+        </g>
+    </defs>
+<use x="50%" y="50%" xlink:href="#device" />
+<!--<line x1="50%" x2="50%" y1="0" y2="100%" stroke="magenta" stroke-width="5" stroke-opacity="0.3" /> 
+<line x1="0" x2="100%" y1="50%" y2="50%" stroke="magenta" stroke-width="60" stroke-opacity="0.3" /> -->
+
+</svg>
