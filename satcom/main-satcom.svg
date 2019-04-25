@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1100 1300">
+    <defs>
+        <style>
+            text{
+                font-family: British Rail Dark Normal;
+                white-space: normal;
+            }
+            .hel {
+                font-family:Helvetica;
+                font-weight:600;
+            }
+            .text-sub {
+                font-size:86px;
+            }
+            .text-sub2 {
+                font-size:63px;
+            }
+
+            .flight {
+                -display:none;
+            }
+
+            .edge-f {
+                fill:#ffffff;
+            }
+            .edge-s {
+                stroke:#505090;
+            }
+
+            .outer {
+                fill:#202020;
+                stroke-width:12;
+            }
+
+            .t1 {
+                fill:#502030;
+            }
+
+            .trace {
+                stroke-width:2;
+                stroke:#d0d0d0;
+                fill:magenta;
+                fill-opacity:0;
+                stroke-opacity:0;
+            }
+
+            .trace2 {
+                stroke-width:2;
+                stroke:magenta;
+                fill:none;
+                fill-opacity:0;
+                stroke-opacity:0.6;
+            }
+            .trace3 {
+                stroke-width:2;
+                stroke:lime;
+                fill:none;
+            }
+            .ant-dish-line {
+                fill:none;
+                stroke:#D0D0D0;
+            }
+            .ant-dish-stalk {
+                fill:#D0D0D0;
+            }
+            .ant-dish-stalk-tip {
+                fill:#303030;
+            }
+            .ant-sup-d {
+                fill:#e0e0e0;
+            }
+            .ant-sup-st {
+                fill:#d0d0d0;
+            }
+            .ant-rad-strut {
+                fill:#D0D0D0;
+                -stroke:#606060;
+                -stroke-width:2;
+            }
+            .ant-dish-side {
+                fill:#B0B0B0;
+            }
+            .ant-dish-edge {
+                fill:#707070;
+            }
+            .ant-dish-cable {
+                fill:none;
+                stroke:#000000;
+                stroke-width:15px;
+                stroke-linecap:round;
+            }
+            .ant-dish-cable-2 {
+                fill:none;
+                stroke:#000000;
+                stroke-width:12px;
+                stroke-linecap:round;
+            }
+            .underslung-stuff {
+                fill:#808080;
+            }
+            .steps-cage-upper {
+                fill:none;
+                stroke:none;
+                stroke-width:3;
+            }
+            .base {
+                fill:#d0d0d0;
+            }
+            .base-med {
+                fill:#909090;
+            }
+            .base-upper {
+                fill:#707070;
+            }
+            .stars {
+                stroke-linecap:round;
+                stroke-width:10;
+                stroke:#ffffff;
+                fill:none;
+            }
+            .lightning {
+                fill:#8080ff;
+                stroke:#202020;
+                stroke-width:15;
+            }
+        </style>
+
+        <g id="antenna-met" transform="scale(0.8,0.8)">
+<!--            <image x="-440" y="-450" width="900" height="900" xlink:href="met-template.png" /> -->
+            <!--<rect x="-100%" y="-100%" width="200%" height="200%" fill="#000008" /> -->
+
+            <!-- steps -->
+            <path class="steps-cage-upper" d="M -187,69 L -112,54 L -88,54" />
+            <path class="steps-cage-upper" d="M -186,92 L -112,79 L -87,80" />
+            <path class="steps-cage-upper" d="M -183,67 L -182,134" />
+            <path class="steps-cage-upper" d="M -162,64 L -160,132" />
+            <path class="steps-cage-upper" d="M -140,59 L -138,128" />
+            <path class="steps-cage-upper" d="M -136,58 L -134,127" />
+
+            <path class="steps-cage-upper" d="M -113,54 L -111,124" />
+            <path class="steps-cage-upper" d="M -88,53 L -85,121" />
+
+            <!-- base, I think?? -->
+            <path class="base" d="M -80,445 v -170 l 26,-85 h 108 l 26,85 v 170" />
+            <path class="base-med" d="M -54,190 l -3,-3 v -5 l 3,-3 h 108 l 3,3 v 5 l -3,3 Z" />
+
+            <!-- basic outline of top dish base -->
+            <path class="base-upper" d="M -74,57 L -100,106 L -89,133 L -80,136 L -81,154 L -76,155 L -77,171 L -69,172 L -60,173 L -59,169 L -46,170 L -50,182 L 66,181 L 85,157 Z" />
+
+            <!-- stuff hanging off to the right -->
+            <path class="underslung-stuff" d="M 201,192 L 201,220 L 228,221 L 228,227 L 238,227 L 238,222 L 258,221 L 259,226 L 268,226 L 269,220 L 284,218 L 285,189" />
+
+            <!-- occluded bigass cable -->
+            <path class="ant-dish-cable-2" d="M 86,198 L 90,194 L 94,189 L 94,183 L 92,178 L 88,172 L 83,166 L 80,156" />
+
+            <!-- stuff hanging central -->
+            <path class="underslung-stuff" d="M -8,175 L 3,172 L 31,173 L 29,207 L 12,212 L -10,211 L -11,197 L -8,194 Z" />
+            <path class="underslung-stuff" d="M 46,180 L 59,177 L 85,178 L 82,212 L 68,217 L 42,215 L 43,200 L 45,198 Z" />
+            <path class="underslung-stuff" d="M 10,207 L 24,208 L 23,218 L 9,217 Z" />
+            <path class="underslung-stuff" d="M 64,212 L 76,214 L 75,223 L 65,222 Z" />
+
+            <!-- bigass cables -->
+            <path class="ant-dish-cable" d="M 20,188 L 19,124" />
+            <path class="ant-dish-cable" d="M 72,188 L 69,180 L 65,167 L 64,156 L 63,140" />
+
+            <!-- dish side -->
+            <path class="ant-dish-side" d="M 395,125 L 336,179 L 310,193 L 272,204 L 231,203 L 193,201 L 147,187 L 113,176 L 66,155 L 21,133 L -20,103 L -62,74 L -98,40 L -133,4 L -161,-32 L -186,-71 L -203,-109 L -217,-144 L -219,-185 L -217,-220 L -212,-246 L -195,-284 L -173,-328 L -141,-364 L -53,-386 L -87,-387 L -112,-379 L -139,-365 L -168,-328 L -175,-307 L -180,-278 L -176,-248 L -171,-215 L -156,-180 L -138,-144 L -110,-105 L -82,-69 L -45,-34 L -8,2 L 33,34 L 76,65 L 122,88 L 170,113 L 210,124 L 253,135 L 293,139 L 330,140 L 363,133 L 388,125 L 405,116 L 430,91 L 447,46 L 444,-8 Z" />
+            <clipPath id="dish-side-clip">
+                <path d="M 395,125 L 336,179 L 310,193 L 272,204 L 231,203 L 193,201 L 147,187 L 113,176 L 66,155 L 21,133 L -20,103 L -62,74 L -98,40 L -133,4 L -161,-32 L -186,-71 L -203,-109 L -217,-144 L -219,-185 L -217,-220 L -212,-246 L -195,-284 L -173,-328 L -141,-364" />
+
+<!--                <path d="M 395,125 L 336,179 L 310,193 L 272,204 L 231,203 L 193,201 L 147,187 L 113,176 L 66,155 L 21,133 L -20,103 L -62,74 L -98,40 L -133,4 L -161,-32 L -186,-71 L -203,-109 L -217,-144 L -219,-185 L -217,-220 L -212,-246 L -195,-284 L -173,-328 L -141,-364 L -53,-386 L -87,-387 L -112,-379 L -139,-365 L -168,-328 L -175,-307 L -180,-278 L -176,-248 L -171,-215 L -156,-180 L -138,-144 L -110,-105 L -82,-69 L -45,-34 L -8,2 L 33,34 L 76,65 L 122,88 L 170,113 L 210,124 L 253,135 L 293,139 L 330,140 L 363,133 L 388,125 L 405,116 L 430,91 L 447,46 L 444,-8 Z" /> -->
+            </clipPath>
+            <!-- between side and proper -->
+            <path class="ant-dish-edge" d="M 440,54 L 429,77 L 410,95 L 390,110 L 359,120 L 331,124 L 294,126 L 262,121 L 213,110 L 177,98 L 127,75 L 83,51 L 40,25 L 1,-7 L -37,-42 L -72,-77 L -99,-111 L -126,-149 L -144,-183 L -158,-217 L -166,-248 L -170,-277 L -165,-305 L -157,-330 L -142,-348 L -126,-363 L -102,-375 L -79,-384 L -49,-388 L -20,-386 M -53,-386 L -87,-387 L -112,-379 L -139,-365 L -168,-328 L -175,-307 L -180,-278 L -176,-248 L -171,-215 L -156,-180 L -138,-144 L -110,-105 L -82,-69 L -45,-34 L -8,2 L 33,34 L 76,65 L 122,88 L 170,113 L 210,124 L 253,135 L 293,139 L 330,140 L 363,133 L 388,125 L 405,116 L 430,91 L 447,46 L 444,-8"  />
+
+            <!-- dish proper and clip path for line details -->
+            <path fill="grey" transform="translate(10,0)" d="M380,110 L 349,120 L 321,124 L 284,126 L 252,121 L 203,110 L 167,98 L 117,75 L 73,51 L 30,25 L -9,-7 L -47,-42 L -82,-77 L -109,-111 L -136,-149 L -154,-183 L -168,-217 L -176,-248 L -180,-277 L -175,-305 L -167,-330 L -152,-348 L -136,-363 L -112,-375 L -89,-384 L -59,-388 L -30,-386 L 6,-382 L 38,-375 L 77,-363 L 115.0,-350.0 L 148,-331 L 184,-312 L 219,-289 L 254,-264 L 289,-234 L 317,-210 L 343,-180 L 369,-148 L 390,-119 L 409,-85 L 420,-57 L 431,-24 L 435,3 L 436,32 L 430,54 L 419,77 L 400,95 Z" />
+            <clipPath id="maindish-clip">
+                <path fill="grey" transform="translate(10,0)" d="M380,110 L 349,120 L 321,124 L 284,126 L 252,121 L 203,110 L 167,98 L 117,75 L 73,51 L 30,25 L -9,-7 L -47,-42 L -82,-77 L -109,-111 L -136,-149 L -154,-183 L -168,-217 L -176,-248 L -180,-277 L -175,-305 L -167,-330 L -152,-348 L -136,-363 L -112,-375 L -89,-384 L -59,-388 L -30,-386 L 6,-382 L 38,-375 L 77,-363 L 115.0,-350.0 L 148,-331 L 184,-312 L 219,-289 L 254,-264 L 289,-234 L 317,-210 L 343,-180 L 369,-148 L 390,-119 L 409,-85 L 420,-57 L 431,-24 L 435,3 L 436,32 L 430,54 L 419,77 L 400,95 Z" />
+            </clipPath>
+            
+            <ellipse class="ant-dish-line" cx="0" cy="0" rx="15" ry="28" transform="translate(70,-53) rotate(-52)"  />
+            <ellipse class="ant-dish-line" cx="0" cy="0" rx="80" ry="150" transform="translate(85,-65) rotate(-52.1)"  />
+
+            <g clip-path="url(#maindish-clip)">
+            <path class="ant-dish-line" d="m 70,-53 q -75,18 -180,-63" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q -100,-10 -220,-140" />
+            <path class="ant-dish-line" d="m 70,-53 q -133,-50 -240,-220" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q -115,-55 -230,-280" />
+            <path class="ant-dish-line" d="m 70,-53 q -105,-63 -199,-313" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q -90,-75 -150,-332" />
+            <path class="ant-dish-line" d="m 70,-53 q -71,-98 -90,-335" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q -43,-96 -20,-325" />
+            <path class="ant-dish-line" d="m 70,-53 q -10,-100 52,-298" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q 26,-80 126,-260" />
+            <path class="ant-dish-line" d="m 70,-53 q 87,-90 196,-212" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q 87,-30 260,-155" />
+            <path class="ant-dish-line" d="m 70,-53 q 100,5 310,-95" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q 100,30 350,-30" />
+            <path class="ant-dish-line" d="m 70,-53 q 110,60 370,30" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q 110,75 375,88" />
+            <path class="ant-dish-line" d="m 70,-53 q 110,100 360,130" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q 70,100 309,166" />
+            <path class="ant-dish-line" d="m 70,-53 q 60,110 250,178" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q 38,110 168,167" />
+            <path class="ant-dish-line" d="m 70,-53 q 12,100 93,152" /> <!-- fl -->
+
+            <path class="ant-dish-line" d="m 70,-53 q -28,30 -130,0" /> <!-- low -->
+            <path class="ant-dish-line" d="m 70,-53 q -40,50 -80,60" /> <!-- fl -->
+            <path class="ant-dish-line" d="m 70,-53 q -20,50 -10,90" /> <!-- right -->
+            </g>
+
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -4,-11 L 3,-6 L -7,5 L -60,76 L -65,72 L -14,2 Z" />
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -40,-45 L -34,-38 L -43,-31 L -96,43 L -103,36 L -48,-36 Z" />
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -75,-79 L -69,-73 L -81,-65 L -131,9 L -136,3 L -87,-70 Z" />
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -103,-115 L -97,-109 L -109,-104 L -159,-27 L -163,-34 L -113,-110 Z" />
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -127,-150 L -123,-143 L -137,-141 L -184,-67 L -187,-70 L -141,-147 Z" />
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -145,-185 L -142,-179 L -154,-177 L -203,-102 L -204,-106 L -156,-182 Z" />
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -162,-221 L -160,-214 L -170,-214 L -217,-139 L -215,-150 L -172,-220 Z" />
+            <path class="ant-rad-strut" clip-path="url(#dish-side-clip)" d="M -166,-250 L -165,-245 L -179,-246 L -223,-171 L -220,-178 L -178,-251 Z" />
+
+            <path class="ant-rad-strut" d="M -170,-282 L -170,-275 L -181,-276 L -215,-218 L -210,-240 L -182,-284" />
+<!--            <path class="ant-rad-strut" d="M -169,-281 L -169,-275 L -181,-274 L -226,-215 L -225,-220 L -180,-280 Z" /> -->
+
+            <!-- downwards from left mid centre -->
+            <path class="ant-rad-strut" d="M 37,20 L 43,27 L 35,39 L -18,105 L -25,100 L 29,33" />
+            <path class="ant-rad-strut" d="M 79,48 L 87,53 L 80,68 L 25,136 L 18,130 L 72,62" />
+            <path class="ant-rad-strut" d="M 124,72 L 130,75 L 126,89 L 69,157 L 62,153 L 119,85" />
+            <path class="ant-rad-strut" d="M 173,95 L 181,99 L 172,113 L 115,177 L 110,175 L 165,110" />
+            <path class="ant-rad-strut" d="M 211,109 L 219,112 L 213,125 L 157,191 L 151,188 L 207,123" />
+            <path class="ant-rad-strut" d="M 253,120 L 260,122 L 256,135 L 197,200 L 189,198 L 251,134" />
+            <path class="ant-rad-strut" d="M 291,126 L 297,126 L 298,139 L 234,203 L 228,203 L 289,139" />
+            <path class="ant-rad-strut" d="M 324,126 L 332,126 L 331,141 L 275,203 L 266,203 L 323,140" />
+            <path class="ant-rad-strut" d="M 358,122 L 364,120 L 366,133 L 313,190 L 306,194 L 359,134" />
+
+
+            <!-- bk - keep, you'll need the second later
+            <path class="trace2" d="M 395,125 L 336,179 L 310,193 L 272,204 L 231,203 L 193,201 L 147,187 L 113,176 L 66,155 L 21,133 L -20,103 L -62,74 L -98,40 L -133,4 L -161,-32 L -186,-71 L -203,-109 L -217,-144 L -219,-185 L -217,-220 L -212,-246 L -195,-284 L -173,-328 L -141,-364" />
+            <path class="trace3" d="M -53,-386 L -87,-387 L -112,-379 L -139,-365 L -168,-328 L -175,-307 L -180,-278 L -176,-248 L -171,-215 L -156,-180 L -138,-144 L -110,-105 L -82,-69 L -45,-34 L -8,2 L 33,34 L 76,65 L 122,88 L 170,113 L 210,124 L 253,135 L 293,139 L 330,140 L 363,133 L 388,125 L 405,116 L 430,91 L 447,46 L 444,-8" />
+            -->
+
+            <!-- dish edge sep
+            <path class="trace3" d="M -53,-386 L -87,-387 L -112,-379 L -139,-365 L -168,-328 L -175,-307 L -180,-278 L -176,-248 L -171,-215 L -156,-180 L -138,-144 L -110,-105 L -82,-69 L -45,-34 L -8,2 L 33,34 L 76,65 L 122,88 L 170,113 L 210,124 L 253,135 L 293,139 L 330,140 L 363,133 L 388,125 L 405,116 L 430,91 L 447,46 L 444,-8" />
+
+            <path class="trace2" d="M 440,54 L 429,77 L 410,95 L 390,110 L 359,120 L 331,124 L 294,126 L 262,121 L 213,110 L 177,98 L 127,75 L 83,51 L 40,25 L 1,-7 L -37,-42 L -72,-77 L -99,-111 L -126,-149 L -144,-183 L -158,-217 L -166,-248 L -170,-277 L -165,-305 L -157,-330 L -142,-348 L -126,-363 L -102,-375 L -79,-384 L -49,-388 L -20,-386" />
+            -->
+
+
+            <!-- stalky thing in the middle of the di- antenna -->
+            <path class="ant-dish-stalk" d="M 80,-40 Q 60,-40 58,-58 L 63,-65 L 62,-69 L 116,-138 Q 140,-135 140,-117 L 91,-50 L 86,-49 Z" />
+
+            <!-- ccw, left bottom origin -->
+            <path class="ant-dish-stalk" d="M 122,-129 Q 122,-120 132,-122 L 137,-129 Q 137,-135 129,-136 Z" />
+
+            <path class="ant-dish-stalk-tip" d="M 137,-129 Q 137,-135 129,-136 Q 128,-128 137,-127" />
+
+            <!-- roundish thing under the antenna support thingy -->
+            <path class="ant-sup-d" d="M 210,-209 L 216,-197 L 218,-182 L 213,-171 L 201,-169 L 188,-173 L 173,-180 L 164,-186 L 155,-197 L 150,-204 L 148,-211 L 148,-220 L 152,-226 L 163,-228 L 171,-228 L 187,-224 L 198,-218" />
+            <!-- tripod antenna support thingy, left top, inwards, clockwise -->
+            <path class="ant-sup-st" d="M -119,-343 L 198,-234 L 181,-287 L 187,-296 L 208,-227 L 404,75 L 389,74 L 202,-220 L 82,47 L 76,43 L 196,-224 L -114,-331 Z" />
+        </g>
+
+        <clipPath id="flightbound">
+            <path d="M -1000,-1000 l 2000,2000 h -2000 l 2000,-2000 Z" />
+        </clipPath>
+
+        <clipPath id="flightbound-edge">
+           <circle r="610" />
+        </clipPath>
+
+        <clipPath id="main-clip">
+            <circle r="490" />
+        </clipPath>
+    
+        <path id="mainpath" d="M-400,0 a 400,400 0,0,1 800,0" />
+        <path id="subpath-top" d="M-520,0 a 520,520 0,0,1 1040,0" />
+        <path id="subpath-bottom" d="M-570,0 a 570,570 0,0,0 1140,0" />
+
+        <g id="key" transform="scale(1.5,1.5)">
+            <path d="M -14 -260 q 14,-5 28,0 v 15 h 30 v -15 h 45 v 15 h -15 v 60 h 15 v 15 h -45 v -15 h -30 v 60 v 270 a 46,46 0,1,1 0,100 v 15 q -14,7 -28,0 v -15 a 46,46 0,1,1 0,-100 v -330 h -30 v 15 h -45 v -15 h 15 v -60 h -15 v -15 h 45 v 15 h 30 Z M -30,195 a 30,30 0,0,1 60,0 a 30,30 0,0,1 -60,0" fill-rule="evenodd" />
+        </g>
+
+        <g id="lightning" transform="scale(0.164, 0.164)">
+            <path d="M -1250,125 l 500,-250 l -100,100 l 600,-100 l -100,100 l 600,-100 l -100,100 l 600,-100 l -100,100 l 600,-100 l -500,250 l 100,-100, -600, 100 l 100,-100, -600, 100 l 100,-100, -600, 100 l 100,-100 Z" />
+        </g>
+        <g id="lightning_a">
+            <use xlink:href="#lightning" transform="rotate(-45.5)"/>
+        </g>
+
+        <g id="device">
+            <circle cx="0" cy="0" r="605" stroke-width="12" class="outer edge-s flight" clip-path="url(#flightbound)" /> <!-- extent: 610 -->
+            <path d="M -1000,-1000 l 2000,2000 h -2000 l 2000,-2000 Z" fill="none" stroke-width="12" class="edge-s flight" clip-path="url(#flightbound-edge)" />
+            <circle cx="0" cy="0" r="495" stroke-width="12" class="outer edge-s" /> <!-- extent: 500 -->
+
+            <text class="text-main">
+                <textPath startOffset="82" xlink:href="#mainpath"></textPath>
+            </text>
+
+            <text class="text-sub edge-f flight">
+                <textPath startOffset="444" xlink:href="#subpath-top">����� ���. �������</textPath>
+            </text>
+
+            <text class="text-sub2 edge-f flight">
+                <textPath startOffset="468" xlink:href="#subpath-bottom"><tspan class="hel">“</tspan>�����<tspan class="hel">’</tspan>� �������� ������<tspan class="hel">”</tspan></textPath>
+            </text>
+
+            <use xlink:href="#antenna-met" clip-path="url(#main-clip)" x="-154" y="160" />
+            <g clip-path="url(#main-clip)">
+                <circle r="470" cx="-110" cy="170" stroke-dashoffset="40" stroke-dasharray="300 200 100 300 200" class="stars"  />
+                <circle r="490" cx="-110" cy="170" stroke-dashoffset="0" stroke-dasharray="400 400 400 800 500" class="stars"  />
+                <circle r="510" cx="-110" cy="170" stroke-dashoffset="100" stroke-dasharray="600 600 200 800 600" class="stars"  />
+                <circle r="530" cx="-110" cy="170" stroke-dashoffset="100" stroke-dasharray="200 300 500 100 400" class="stars"  />
+                <circle r="550" cx="-110" cy="170" stroke-dashoffset="190" stroke-dasharray="300 150 400 350 200" class="stars"  />
+                <circle r="570" cx="-110" cy="170" stroke-dashoffset="-130" stroke-dasharray="500 200 300 100 400" class="stars"  />
+                <circle r="590" cx="-110" cy="170" stroke-dashoffset="0" stroke-dasharray="300 600 400 100 200" class="stars"  />
+                <circle r="620" cx="-110" cy="170" stroke-dashoffset="-100" stroke-dasharray="100 50 150 200 100" class="stars"  />
+                <circle r="650" cx="-110" cy="170" stroke-dashoffset="180" stroke-dasharray="400 200 200 100 300" class="stars"  />
+                <circle r="670" cx="-110" cy="170" stroke-dashoffset="50" stroke-dasharray="500 400 300 200 100" class="stars"  />
+            </g>
+            <use xlink:href="#lightning_a" class="lightning" x="185" y="-215" />
+        </g>
+    </defs>
+<use x="50%" y="50%" xlink:href="#device" />
+<!--
+<line x1="50%" x2="50%" y1="0" y2="100%" stroke="magenta" stroke-width="5" stroke-opacity="0.3" /> 
+<line x1="25%" x2="75%" y1="50%" y2="50%" stroke="magenta" stroke-width="5" stroke-opacity="0.3" />
+<line x1="0" y1="100%" x2="100%" y2="0%" stroke="magenta" stroke-width="5" stroke-opacity="0.3" />
+-->
+</svg>
+
